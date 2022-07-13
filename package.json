@@ -1,0 +1,22 @@
+{
+  "name": "projet_4_mourice_hugues",
+  "version": "1.0.0",
+  "description": "site la panthère",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mherlin06/Projet-4-MOURICE-Hugues.git"
+  },
+  "author": "hugues_mourice",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mherlin06/Projet-4-MOURICE-Hugues/issues"
+  },
+  "homepage": "https://github.com/Mherlin06/Projet-4-MOURICE-Hugues#readme",
+  "devDependencies": {
+    "purgecss-webpack-plugin": "^4.1.3"
+  }
+}
