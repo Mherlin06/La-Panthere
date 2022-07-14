@@ -767,7 +767,8 @@ h4 {
 }
 
 .img-responsive{
-    width: 320px;
+    width: auto;
+    height: auto;
 }
 
 .black-background {
