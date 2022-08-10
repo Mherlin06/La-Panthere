@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: #f1f1f1;
+    background: #FFF;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -18,13 +18,13 @@ a:hover {
     cursor: pointer;
 }
 
-#page-loading-blocs-notifaction{
+#page-loading-blocs-notifaction {
     position: fixed;
     top: 0;
     bottom: 0;
     width: 100%;
     z-index: 100000;
-    background: #f1f1f1 no-repeat center center;
+    background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
 }
 
 .bloc {
@@ -91,7 +91,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.webp");
+    background: url("img/texture-paper.png");
     background-size: 280px 280px;
 }
 
@@ -133,7 +133,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: #333;
+    color: rgba(255, 255, 255, .6);
 }
 
 .d-bloc .a-btn:hover,
@@ -456,7 +456,7 @@ nav .caret {
 .btn-d,
 .btn-d:hover,
 .btn-d:focus {
-    color: #f1f1f1;
+    color: #FFF;
     background: rgba(0, 0, 0, .3);
 }
 
@@ -545,7 +545,7 @@ a[data-lightbox]:hover::before {
     margin-left: -25px;
     border-radius: 50%;
     background: rgba(0, 0, 0, .6);
-    color: #f1f1f1;
+    color: #FFF;
     font-weight: 100;
     z-index: 1;
     position: absolute;
@@ -648,12 +648,10 @@ h6,
 p,
 label,
 .btn,
-a,
-li {
+a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #333!important;
-    list-style: none;
+    color: #575757!important;
 }
 
 .container {
@@ -679,7 +677,7 @@ li {
 }
 
 p {
-    font-size: 16px;
+    font-size: 11px;
 }
 
 .tight-width-whitespace {
@@ -694,7 +692,7 @@ p {
 
 .cta-hero {
     margin-top: 22px;
-    color: #f1f1f1!important;
+    color: #FFFFFF!important;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
     font-size: 16px;
@@ -703,24 +701,12 @@ p {
 
 .social {
     max-width: 400px;
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
-}
-
-.social span {
-    color: #333;
-}
-
-blockquote q {
-    font-style: italic;
-    color: #9D5939;
+    margin: auto auto auto auto;
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 1.4em;
-    color: #333!important;
 }
 
 h3 {
@@ -750,7 +736,7 @@ h4 {
 }
 
 .white {
-    color: #f1f1f1!important;
+    color: #FFFFFF!important;
 }
 
 .portfolio-thumb {
@@ -766,11 +752,6 @@ h4 {
     box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
 }
 
-.img-responsive{
-    width: auto;
-    height: auto;
-}
-
 .black-background {
     background-color: rgba(165, 147, 99, 0.7);
     padding: 40px 40px 40px 40px;
@@ -782,7 +763,7 @@ h4 {
 }
 
 .bgc-white {
-    background-color: #f1f1f1;
+    background-color: #FFFFFF;
 }
 
 .bgc-dark-slate-blue {
@@ -794,21 +775,21 @@ h4 {
 }
 
 .tc-white {
-    color: #f1f1f1!important;
+    color: #F3976C!important;
 }
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #333!important;
+    color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine:hover {
     background: #c27956!important;
-    color: #f1f1f1!important;
+    color: #FFFFFF!important;
 }
 
 .ltc-white {
-    color: #f1f1f1!important;
+    color: #FFFFFF!important;
 }
 
 .ltc-white:hover {
@@ -829,16 +810,19 @@ h4 {
 }
 
 .bg-dots-bg {
-    background-image: url("img/dots-bg.webp");
+    background-image: url("img/dots-bg.png");
 }
 
+.bg-lines-h2-bg {
+    background-image: url("img/lines-h2-bg.png");
+}
 
 .bg-banniere {
-    background-image: url("img/agence-la-panthere.webp");
+    background-image: url("img/agence-la-panthere.jpg");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.webp");
+    background-image: url("img/image-de-presentation.bmp");
 }
 
 @media (max-width: 1024px) {
@@ -864,13 +848,13 @@ h4 {
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -888,7 +872,10 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-
+    .bloc {
+        padding-left: constant(safe-area-inset-left);
+        padding-right: constant(safe-area-inset-right);
+    }
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -897,6 +884,8 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
+        padding-left: constant(safe-area-inset-left);
+        padding-right: constant(safe-area-inset-right);
     }
 }
 
@@ -1049,10 +1038,5 @@ h4 {
 @media (max-width: 767px) {
     .bloc-mob-center-text {
         text-align: center;
-    }
-
-    .portfolio-row a {
-        display: flex;
-        justify-content: center;
     }
 }
