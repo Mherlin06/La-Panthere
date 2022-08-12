@@ -476,7 +476,7 @@ button {
 }
 
 .icon-md {
-    font-size: 30px!important;
+    font-size: 35px !important;
 }
 
 .icon-lg {
@@ -1054,5 +1054,9 @@ h4 {
     .portfolio-row a {
         display: flex;
         justify-content: center;
+    }
+
+    .icon-md{
+        font-size: 50px !important;
     }
 }
