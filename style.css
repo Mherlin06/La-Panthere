@@ -767,7 +767,7 @@ h4 {
 }
 
 .img-responsive{
-    width: auto;
+    width: 100px;
     height: auto;
 }
 
